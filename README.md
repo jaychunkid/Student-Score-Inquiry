@@ -16,7 +16,7 @@
 * `StudentScoreInquiryClient`：封装客户端操作。其中，连接服务器时使用`Naming`类的`lookup`方法可以获取对应IP和端口上的远程接口。
 * `ClientController`：利用`SwingUtilities.invokeLate`方法以及`SwingWorker`对象实现界面更新与后台操作的线程分离。
 ### 程序测试
-* 服务器运行需要 mysql 数据库的连接器jar包，并且需要在`JDBCManager`对象中填写用户名及密码
-* 数据库初始化实例 <br><br> ![](https://github.com/jaychunkid/Student-Score-Inquiry/raw/master/screenshot/database.PNG)
-
-  
+* 服务器运行需要 mysql 数据库的连接器jar包，并且需要在`JDBCManager`对象中填写用户名及密码。
+* 要求数据库中预先包含表项与数据，初始化实例如下 <br><br> ![](https://github.com/jaychunkid/Student-Score-Inquiry/raw/master/screenshot/database.PNG)
+* 运行`startServer`中的 main 方法启动服务器，可通过启动参数指定端口号，否则为默认端口号5454。
+* 运行`startClient`中的 main 方法启动客户端。  
